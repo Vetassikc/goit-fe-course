@@ -100,13 +100,13 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  color: rgb(98, 98, 98);
+  color: #626262;
 }
 
 .load-buttn {
   background: transparent;
   border-width: 1px;
-  border-color: rgb(98, 98, 98);
+  border-color: #626262;
   border-style: solid;
   padding: 1rem 2rem;
   font-size: 20px;
