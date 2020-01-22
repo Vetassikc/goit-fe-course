@@ -97,6 +97,9 @@ body {
   padding: 0;
   list-style: none;
 }
+.slider-hover:hover{
+  background: rgba(1, 1, 1, 0.7);
+}
 .slider-ctrl {
   padding: 0;
   position: absolute;
