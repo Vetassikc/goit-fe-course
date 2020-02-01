@@ -34,7 +34,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .wrap {
-  width: 1170px;
+  width: 1110px;
   margin: 0 auto;
 }
 .nav {
@@ -96,8 +96,9 @@ body {
   margin: 0 auto;
   padding: 0;
   list-style: none;
+  
 }
-.slider-hover:hover{
+.slider-hover {
   background: rgba(1, 1, 1, 0.7);
 }
 .slider-ctrl {
@@ -192,11 +193,10 @@ body {
   background-color: var(--color-hover);
 }
 .cards {
-  margin: 0 auto 100px auto;
+  margin: 0 auto ;
   margin-bottom: 70px;
   text-transform: uppercase;
   color: #ffffff;
-  width: 1110px;
   min-height: 362px;
 }
 .cards div:nth-child(4n) {
@@ -353,11 +353,12 @@ body {
 
 .footer {
   background-color: rgb(50, 50, 50);
-  height: 88px;
+ 
   text-align: center;
 }
 .footer-text {
-  line-height: 88px;
+  padding-bottom: 39px;
+  padding-top: 39px;
   font-size: 16px;
   font-family: "OpenSans-Regular";
   color: rgb(254, 254, 254);
