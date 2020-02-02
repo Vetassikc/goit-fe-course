@@ -58,7 +58,7 @@ body {
   margin-right: 0;
 }
 .nav-a {
-  line-height: 32px;
+  line-height: 1.5;
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
@@ -82,7 +82,6 @@ body {
   background-image: url("../img/girls.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 98px;
 }
 .slider {
   height: 600px;
@@ -96,7 +95,6 @@ body {
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  
 }
 .slider-hover {
   background: rgba(1, 1, 1, 0.7);
@@ -173,6 +171,7 @@ body {
 .sign {
   margin: 0 auto;
   margin-bottom: 92px;
+  position: relative;
 }
 .sign-h {
   margin: auto;
@@ -188,12 +187,22 @@ body {
   display: block;
   height: 8px;
   width: 160px;
-  margin: 0 auto;
-  margin-top: 27px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 68px;
+
   background-color: var(--color-hover);
 }
+
+.section {
+  background-color: #e9f0fd;
+  padding-top: 98px;
+}
+
+
 .cards {
-  margin: 0 auto ;
+  margin: 0 auto;
   margin-bottom: 70px;
   text-transform: uppercase;
   color: #ffffff;
@@ -353,7 +362,7 @@ body {
 
 .footer {
   background-color: rgb(50, 50, 50);
- 
+
   text-align: center;
 }
 .footer-text {
