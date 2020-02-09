@@ -57,6 +57,9 @@ body {
   text-decoration: none;
   transition: color 0.1s linear;
 }
+.navigation_link:nth-last-child(1) {
+  margin-right: 0;
+}
 
 .navigation_link::after {
   content: "";
