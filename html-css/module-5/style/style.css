@@ -223,7 +223,7 @@ body {
   position: relative;
   float: left;
   width: 255px;
-  height: 362px;
+  height: 100%;
   margin-right: 30px;
   /* margin-bottom: 30px; */
   text-align: center;
@@ -249,7 +249,7 @@ body {
   font-size: 18px;
 }
 .card-image {
-  height: 283px;
+  height: 100%;
   width: 255px;
   vertical-align: middle;
 }
@@ -268,7 +268,7 @@ body {
   float: right;
   background-color: var(--color-price);
   padding-left: 10px;
-  margin-top: 0;
+  margin: 0 auto;
 }
 .card-sign {
   margin: 0;
