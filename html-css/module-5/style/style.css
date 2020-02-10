@@ -130,10 +130,10 @@ body {
   opacity: 1;
 }
 .left-arrow {
-  left: 0%;
+  left: 10%;
 }
 .right-arrow {
-  right: 0%;
+  right: 10%;
 }
 .right-arrow::before,
 .left-arrow::before {
