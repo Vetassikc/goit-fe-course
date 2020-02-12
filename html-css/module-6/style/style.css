@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* fonts */
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KaushanScript";
+  src: url("../fonts/KaushanScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto LightItalic";
+  src: url("../fonts/Roboto-LightItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+body {
+  margin: 0;
+}
+
+/* header */
+.container {
+  max-width: 1201px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  color: rgb(153, 153, 153);
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+.site-menu {
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  min-height: 65px;
+}
+
+.logo {
+  padding-bottom: 12px;
+}
+
+.site-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation-item {
+  margin-right: 56px;
+}
+
+.site-navigation-item:last-child {
+  margin: 0;
+}
+
+.site-menu {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #d7f4ee;
+  line-height: 17px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  transition: color, border 0.2s linear;
+}
+
+.site-menu:hover {
+  color: #f38181;
+  border-color: rgb(243, 129, 129);
+}
+
+/* service block */
+
