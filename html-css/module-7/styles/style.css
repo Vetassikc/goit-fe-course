@@ -15,42 +15,40 @@ img {
   height: auto;
 }
 /* montserrat-regular - latin */
+/* montserrat-regular - latin */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"),
-    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/Montserat/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Montserat/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-800 - latin */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
-  src: local("Montserrat ExtraBold"), local("Montserrat-ExtraBold"),
-    url("../fonts/montserrat-v14-latin-800.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/montserrat-v14-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+       url('../fonts/Montserat/montserrat-v14-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Montserat/montserrat-v14-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 }
 /* roboto-slab-regular - latin */
 @font-face {
-  font-family: "Roboto Slab";
+  font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
-  src: local(""),
-    url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(''),
+       url('../fonts/RobotoSlab/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/RobotoSlab/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
   font-family: "Droid Serif";
   src: url("droidserif-italic.eot");
   src: url("droidserif-italic.eot?#iefix") format("embedded-opentype"),
-    url("droidserif-italic.woff") format("woff"),
-    url("droidserif-italic.ttf") format("truetype");
+    url("../fonts/DroidSerif.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
@@ -106,7 +104,7 @@ body {
 
 /* Section */
 .section {
-  padding-top: 119px;
+ 
 }
 
 .section_header {
@@ -123,7 +121,7 @@ body {
   color: #222222;
   font-family: "Montserrat";
   font-weight: 800;
-  margin: 0 0 20px 0;
+  margin: 119px 0 20px 0;
 }
 
 .section_suptitle {
@@ -132,6 +130,7 @@ body {
   color: #8d8d8d;
   font-style: italic;
   line-height: 1.2;
+  margin: 0;
 }
 
 /* Services */
@@ -141,13 +140,12 @@ body {
   margin: 0;
   display: flex;
   text-align: center;
-  margin-bottom: 118px;
   justify-content: space-between;
 }
 
 .services-menu-item {
   padding-top: 74px;
-  min-width: 280px;
+  max-width: 280px;
   color: rgb(50, 50, 50);
 }
 
@@ -193,8 +191,6 @@ body {
 /* Contact Form */
 
 .contact_form {
-  min-height: 677px;
-  padding-top: 119px;
   background-image: url(../img/Backgr/Map_Image.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -203,6 +199,7 @@ body {
 
 .white {
   color: #ffffff;
+  padding-top: 119px;
 }
 
 .contact_wrapper {
@@ -270,11 +267,11 @@ textarea[name="message"] {
   resize: none;
 }
 
-.form_item input[type="message"]:valid {
+textarea:valid {
   outline-color: #20c14a;
 }
 
-.form_item input[type="message"]:invalid {
+textarea:invalid {
   outline-color: #de2f2f;
 }
 
@@ -288,5 +285,5 @@ textarea[name="message"] {
   border: none;
   border-radius: 3px;
   padding: 24px 44px;
-  margin-top: 31px;
+  margin: 31px 0 115px;
 }
