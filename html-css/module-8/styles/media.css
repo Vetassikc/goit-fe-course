@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
   .container {
-    width: 680px;
+    max-width: 768px;
   }
 
   .site_header {
@@ -63,7 +63,7 @@
     width: auto;
   }
   .container {
-    width: 938px;
+    max-width: 940px;
   }
 
   .site_navigation {

@@ -59,7 +59,7 @@ li {
 }
 
 .container {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -70,6 +70,7 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 540px;
+  margin-bottom: 67px;
 }
 
 .site_navigation {
@@ -91,7 +92,7 @@ li {
 
 .site_menu_item {
   display: inline-block;
-  margin-top: 48px;
+  padding-top: 48px;
 }
 
 .nav-a {
@@ -101,7 +102,7 @@ li {
   font-family: "Montserrat", sans-serif;
 }
 
-.nav-a:active {
+.nav-a:hover {
   border: solid 2px rgb(255, 255, 255);
   border-radius: 20px;
 }
@@ -132,8 +133,8 @@ li {
   cursor: pointer;
 }
 
-.main_content {
-  margin-top: 67px;
+.header_button:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .section_title {
@@ -143,8 +144,7 @@ li {
 }
 
 .card {
-  display: inline-block;
-  margin-bottom: 21px;
+  margin: 0 auto 21px;
   width: 200px;
 }
 
@@ -213,7 +213,6 @@ li {
   font-weight: 300;
 }
 
-
 .site_footer {
   margin-top: 23px;
 }
@@ -229,4 +228,8 @@ li {
   color: #ff4e50;
   cursor: pointer;
   margin-bottom: 57px;
+}
+
+.footer_button:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
