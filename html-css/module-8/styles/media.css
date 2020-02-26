@@ -42,7 +42,7 @@
   }
 
   .cards {
-    width: 480px;
+    max-width: 480px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -59,9 +59,6 @@
 }
 
 @media screen and (min-width: 940px) {
-  body {
-    width: auto;
-  }
   .container {
     max-width: 940px;
   }
@@ -76,12 +73,12 @@
   }
 
   .cards {
-    width: 938px;
+    max-width: 938px;
     margin-bottom: 39px;
   }
 
   .card {
-    margin-bottom: 0;
+    margin: 0;
   }
 
 }
