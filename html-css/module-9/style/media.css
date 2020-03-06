@@ -1,93 +1,36 @@
-@media (min-width: 510px) and (max-width: 575px) {
-  .head-sign {
-    /* padding: 0 30%; */
-    margin: 0 10%;
-  }
+@media screen and (min-width: 768px) {
+	.sait {
+		 min-height: 700px;
+		 background-image: url(../img/bgtablet.jpg);
+
+	}
+
+	.naw {
+		 display: flex;
+		 flex-direction: row-reverse;
+		 justify-content: space-between;
+		 align-items: center;
+	}
+
+	h1 {
+		 font-size: 52px;
+	}
+
+	.text-item {
+		 font-size: 24px;
+	}
+
+	.button-partner {
+		 padding: 12px 22px;
+	}
+
+	.see {
+		 padding: 12px 30px;
+	}
 }
 
-@media (min-width: 576px) {
-  .wrapper {
-    height: 700px;
-  }
-
-  .navigation {
-    flex-direction: row;
-    margin: 0 40px;
-    margin-bottom: 160px;
-  }
-
-  .logo-href {
-    margin-top: 0;
-  }
-
-  .nav-a {
-      margin: 0;
-  }
-
-  .head-sign {
-    font-size: 52px;
-  }
-
-  .head-description {
-    font-size: 24px;
-    margin-bottom: 34px;
-    padding: 0 70px;
-  }
-
-  .cards {
-    margin: 0 auto;
-    width: 492px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* align-items: center; */
-  }
-
-  .card {
-    width: 236px;
-  }
-
-  .text-container {
-    padding: 0 5px;
-  }
-
-  .order-1 {
-    order: 0;
-  }
-
-  .order-2 {
-    order: 2;
-  }
-
-  .order-3 {
-    order: 1;
-  }
-
-  .order-4 {
-    order: 3;
-  }
-
-  .down-button-sign {
-    padding: 12px 50px;
-  }
-}
-
-@media (min-width: 940px) {
-  .wrapper {
-    height: 700px;
-  }
-
-  .cards {
-    width: 740px;
-    flex-wrap: nowrap;
-  }
-
-  .head-sign {
-    margin-bottom: 32px;
-  }
-}
-
-@media (min-width: 992px) {
-  .head-sign {
-    padding: 0 15%;
-  }
+@media screen and (min-width: 960px) {
+	.sait {
+		 background-image: url(../img/bg_desc.jpg);
+	}
 }
