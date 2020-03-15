@@ -1,0 +1,49 @@
+.footer-wrap {
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $secondary-color;
+}
+
+.footer-text {
+  font-size: 14px;
+  font-family: $main-font-family;
+  color: $main-color;
+  line-height: 1.2;
+}
+.footer-text__span {
+  color: $slave-color;
+}
+.footer-input {
+  width: 230px;
+  height: 36px;
+  padding: 0;
+  margin: 0;
+  font-size: $primary-font-size;
+  font-family: $primary-font-family;
+  color: $secondary-color;
+  line-height: $main-line-height;
+  text-align: left;
+}
+.btn {
+  min-width: 150px;
+  height: 40px;
+  font-size: $main-font-size;
+  font-family: $main-font-family;
+  font-weight: $bold-font-weight;
+  color: $primary-color;
+  background-color: $hover-bg-color;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  border-style: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.wrap-button {
+  display: flex;
+  align-items: center;
+}

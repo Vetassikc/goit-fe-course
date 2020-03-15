@@ -1,0 +1,42 @@
+.nav {
+  font-size: $main-font-size;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  position: relative;
+
+  color: $primary-color;
+  text-decoration: none;
+  fill: $primary-color;
+  @include transition_transform;
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: $hover-color;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    @include transition_opacity;
+  }
+  &:nth-last-child(-n + 2)::after {
+    display: none;
+  }
+  &:hover {
+    color: $hover-color;
+    fill: $hover-color;
+  }
+  &:hover:after {
+    opacity: 1;
+  }
+}

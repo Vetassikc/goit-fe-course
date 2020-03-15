@@ -1,0 +1,11 @@
+@mixin transition_transform ($property: transform, $duration: 0.2s, $function: linear) {
+	transition-property: $property;
+	transition-duration: $duration;
+	transition-timing-function: $function;
+}
+
+@mixin transition_opacity ($property: opacity, $duration: 0.2s, $function: linear) {
+	transition-property: $property;
+	transition-duration: $duration;
+	transition-timing-function: $function;
+}
