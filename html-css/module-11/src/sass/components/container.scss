@@ -4,3 +4,12 @@
 	max-width: 1200px;
 	margin: 0 auto;
  }
+
+ .footer-wrap {
+	height: 62px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid $secondary-color;
+ }
+ 
