@@ -1,0 +1,54 @@
+.problems-section {
+	padding-top: 52px;
+	background-color: #111517;
+	height: 518px;
+	position: relative;
+}
+
+.problems-section__title {
+	color: $slave-color;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.numbered-list {
+	background-color: $slave-color;
+	box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+	padding: 27px 25px 30px 27px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	width: 280px;
+}
+
+.numbered-list__item {
+	margin-bottom: 15px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.numbered-list__counter {
+	position: relative;
+	margin: 0 0 0 35px;
+	font-size: 14px;
+	color: $primary-color;
+	line-height: 2;
+	width: 14px;
+	&::before {
+		display: block;
+		position: absolute;
+		content: "";
+		background-color: $primary-color;
+		width: 25px;
+		height: 2px;
+		top: 12px;
+		left: -35px;
+	}
+}
+
+.numbered-list__text {
+	line-height: 1.5;
+	font-weight: 700;
+}

@@ -1,0 +1,29 @@
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 34px;
+  margin-bottom: 60px;
+}
+
+.site-logo {
+}
+
+.logo__img {
+  width: 80px;
+  height: 30px;
+}
+
+.navigation__list {
+  display: none;
+}
+
+
+.menu-rows {
+  display: block;
+  border: none;
+  background: none;
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
