@@ -1,0 +1,56 @@
+.form-section {
+  padding-top: 58px;
+  padding-bottom: 59px;
+  background-image: url(/src/images/Form/footer-320.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form-section__request {
+  min-width: 320px;
+  height: auto;
+  text-align: center;
+}
+
+.form-section__title {
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: 800;
+  color: $slave-color;
+  width: 230px;
+  margin: 0 auto 14px;
+}
+
+.form-section__subtitle {
+  font-size: $primary-font-size;
+  line-height: 20px;
+  font-weight: 600;
+  color: $slave-color;
+  width: 279px;
+  margin: 0 auto 27px;
+}
+
+.form__registration {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  height: 120px;
+  margin: 0 auto 55px;
+}
+
+.form__registration input {
+  display: block;
+  padding-left: 23px;
+  height: 50px;
+  border: 1px solid $slave-color;
+  color: $slave-color;
+  font-size: $main-font-size;
+  line-height: 38px;
+  font-weight: 600;
+  background-color: transparent;
+  &::placeholder {
+    color: $slave-color;
+  }
+}

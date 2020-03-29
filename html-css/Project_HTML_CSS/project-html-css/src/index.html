@@ -289,7 +289,7 @@
               <h3 class="program-section__subtitle">5 семестр</h3>
               <ul class="item__list">
                 <li class="item__list--item">
-                  <p class="caption">Test</p>
+                  <p class="caption visibility">Test</p>
                   <p class="theme">Revision<br />Tests</p>
                 </li>
               </ul>
@@ -340,10 +340,21 @@
       <!-- TEACHER SECTION -->
       <section class="teacher-section container">
         <h2 class="teacher-section__title title">Преподаватель</h2>
-        <div class="teacher-section__photo">
-          <img src="./images/photos/teacher.jpg" alt="Hellen photo" />
-        </div>
-        <h3 class="teacher-section__name"></h3>
+        <picture class="teacher-section__photo">
+          <source
+            media="(min-width: 1280px)"
+            srcset="./images/photos/teacher-1280.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/photos/teacher-768.jpg"
+          />
+          <img
+            src="./images/photos/teacher-320.jpg"
+            alt="photo with a teacher"
+          />
+        </picture>
+        <h3 class="teacher-section__name">Елена Морева</h3>
         <ul class="teacher-section__list">
           <li class="teacher-section__item">
             Опыт подготовки учеников к ВНО - 6 лет
@@ -383,7 +394,9 @@
           <ul class="warranty__list">
             <li class="warranty__item">
               Ты сдашь ВНО минимум на 25 баллов лучше, чем на первом пробном
-              тестировании. Иначе мы вернем деньги.<span>&#42;</span>
+              тестировании. Иначе мы вернем деньги.<span class="suptitle__inner"
+                >&#42;</span
+              >
             </li>
             <li class="warranty__item">
               Ты научишься писать сочинения минимум на 10 баллов из 14.
@@ -422,20 +435,32 @@
               <use href="./images/icons/icons/sprite.svg#icon-vk"></use>
             </svg>
           </a>
-          <p class="reviews-section__name">Тоня Кучеровская</p>
+          <p class="reviews-section__name suptitle__inner">Тоня Кучеровская</p>
           <p class="reviews-section__about">
             Выпуск 2015-го года, Національний університет біоресурсів і
             природокористування України
           </p>
+
+          <p class="reviews-section__text">
+            За короткий час занять з Оленою я опанувала граматику і поповнила
+            свій зовсім пустий словниковий запас. З першого ж заняття я
+            зрозуміла, що знаходжуся у своїй тарілці ...
+            <button class="reviews-section__button suptitle__inner">
+              Читать дальше
+            </button>
+          </p>
+          <p class="slides__text-tablet">
+            За короткий час занять з Оленою я опанувала граматику і поповнила
+            свій зовсім пустий словниковий запас. З першого ж заняття я
+            зрозуміла, що знаходжуся у своїй тарілці. Ми з Оленою стали друзями,
+            тому що її справді хвилювала моя успішність. Вона стала для мене
+            авторитетом, проте я не тремтіла на уроках, маючи страх зробити
+            найменшу помилку. Зараз я можу похизуватись тим, що я студен ...
+            <button class="reviews-section__button suptitle__inner">
+              Читать дальше
+            </button>
+          </p>
         </div>
-        <p class="reviews-section__text">
-          За короткий час занять з Оленою я опанувала граматику і поповнила свій
-          зовсім пустий словниковий запас. З першого ж заняття я зрозуміла, що
-          знаходжуся у своїй тарілці ...
-          <button class="reviews-section__button suptitle__inner">
-            Читать дальше
-          </button>
-        </p>
         <div class="slider">
           <div class="slider__buttons">
             <button class="slider__ctrl slider__ctrl-prev"></button>
@@ -444,58 +469,44 @@
           <div class="slider__pagination">
             <button class="slider-pagination__item">
               <img
-                src="./images/study/slider-01.png"
-                alt="photo with a person"
-                width="54"
-                height="54"
+                src="./images/photos/slider-01.png"
+                alt="photo"
               />
             </button>
             <button class="slider-pagination__item">
               <img
-                src="./images/study/slider-02.png"
-                alt="photo with a person"
-                width="54"
-                height="54"
+                src="./images/photos/slider-02.png"
+                alt="photo"
               />
             </button>
             <button class="slider-pagination__item">
               <img
-                src="./images/study/slider-03.png"
-                alt="photo with a person"
-                width="54"
-                height="54"
+                src="./images/photos/slider-03.png"
+                alt="photo"
               />
             </button>
             <button class="slider-pagination__item">
               <img
-                src="./images/study/slider-04.png"
-                alt="photo with a person"
-                width="54"
-                height="54"
+                src="./images/photos/slider-04.png"
+                alt="photo"
               />
             </button>
             <button class="slider-pagination__item">
               <img
-                src="./images/study/slider-05.png"
-                alt="photo with a person"
-                width="54"
-                height="54"
+                src="./images/photos/slider-05.png"
+                alt="photo"
               />
             </button>
             <button class="slider-pagination__item">
               <img
-                src="./images/study/slider-06.png"
-                alt="photo with a person"
-                width="54"
-                height="54"
+                src="./images/photos/slider-06.png"
+                alt="photo"
               />
             </button>
             <button class="slider-pagination__item">
               <img
-                src="./images/study/slider-07.png"
-                alt="photo with a person"
-                width="54"
-                height="54"
+                src="./images/photos/slider-07.png"
+                alt="photo"
               />
             </button>
           </div>
@@ -503,14 +514,14 @@
       </section>
 
       <!-- FORM SECTION -->
-      <section class="form-section container">
-        <div class="form-section__request">
+      <section class="form-section">
+        <div class="form-section__request container">
           <h2 class="form-section__title ">
-            Регистрация на <span>бесплатную </span>телефонную
-            <span>консультацию </span>по нюансам ЗНО по английскому языку
+            Регистрация на <span class="suptitle__inner">бесплатную </span>телефонную
+            <span class="suptitle__inner">консультацию </span>по нюансам ЗНО по английскому языку
           </h2>
-          <p class="form-section__subtitle ">
-            Оставь заявку на участие в <span>бесплатном занятии. </span>С вами
+          <p class="form-section__subtitle">
+            Оставь заявку на участие в <span class="suptitle__inner">бесплатном занятии. </span>С вами
             свяжется консультант и ответит на вопросы.
           </p>
           <form class="form" action="#">
@@ -532,7 +543,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer ">
       <div class="contacts container">
         <a class="contacts__phone" href="tel:+380000000000"
           >+38 (000) 000 00 00</a
@@ -557,7 +568,7 @@
         </a>
       </div>
       <div class="legal__information">
-        <div class="container">
+        <div class="">
           <span>&#64; Все права защищены, 2019</span>
         </div>
       </div>

@@ -1,0 +1,76 @@
+.teacher-section {
+	padding-top: 246px;
+	margin-bottom: 49px;
+}
+
+.teacher-section__title {
+	margin-bottom: 25px;
+}
+
+.teacher-section__photo img{
+	width: 279px;
+	margin-bottom: 24px;
+}
+
+.teacher-section__name {
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.teacher-section__list {
+	margin-bottom: 20px;
+	padding-top: 24px;
+	border-top: 1px solid rgba(133, 133, 133, 0.38);
+}
+
+.teacher-section__item {
+	position: relative;
+	padding-left: 34px;
+	width: 280px;
+	color: #111517;
+	font-size: 13px;
+	line-height: 1.5;
+	font-weight: 600;
+	letter-spacing: 1.06px;
+	margin-bottom: 22px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&::before {
+		display: block;
+		content: "";
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-image: url(/src/images/icons/icons/icon-check.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+.teacher-section__text {
+	margin-bottom: 20px;
+	padding-left: 15px;
+	font-size: $primary-font-size;
+	color: $secondary-color;
+	line-height: 1.8;
+	&:first-of-type {
+		&::before {
+			margin-bottom: 17px;
+			display: block;
+			content: "";
+			width: 25px;
+			height: 2px;
+			background-color: $primary-color;
+		}
+	}
+}
+
+.teacher-section__link {
+	padding-left: 15px;
+	font-size: $primary-font-size;
+	line-height: 1.8;
+	text-decoration: underline;
+}

@@ -4,6 +4,9 @@
   padding-bottom: 47px;
   background-color: #111517;
   height: 1891px;
+  background-image: url(/src/images/photos/photo-02-cut.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 84%;
 }
 
 .program-section__title {
@@ -25,7 +28,7 @@
     top: 10px;
     left: 0;
     width: 2px;
-    height: 1310px;
+    height: 1230px;
     background-color: $secondary-color;
   }
 }
@@ -33,7 +36,7 @@
 .program-section__item {
   width: 140px;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding-right: 20px;
   &::before {
     content: '';
@@ -63,33 +66,33 @@
 }
 
 .caption {
-	position: relative;
-	margin-left: 35px;
-	font-size: 14px;
-	line-height: 1.8;
-	font-weight: 500;
-	color: $primary-color;
-	margin-bottom: 18px;
-	&::before {
-		content: "";
-		display: block;
-		position: absolute;
-		width: 25px;
-		height: 2px;
-		top: 13px;
-		left: -35px;
-		background-color: $primary-color;
-	}
+  position: relative;
+  margin-left: 35px;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 500;
+  color: $primary-color;
+  margin-bottom: 18px;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    top: 13px;
+    left: -35px;
+    background-color: $primary-color;
+  }
+}
+
+.visibility {
+	color: $main-color;
 }
 
 .theme {
-	font-size: $primary-font-size;
-	line-height: 1.8;
-	font-weight: 400;
-	color: $secondary-color;
-	margin-bottom: 18px;
-}
-
-.visually-hidden {
-	visibility: hidden;
+  font-size: $primary-font-size;
+  line-height: 1.8;
+  font-weight: 400;
+  color: $secondary-color;
+  margin-bottom: 18px;
 }
