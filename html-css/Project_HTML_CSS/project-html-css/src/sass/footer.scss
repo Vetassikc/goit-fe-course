@@ -25,9 +25,10 @@
     position: absolute;
     left: 0;
     top: 8px;
-    background-image: url(/src/images/footer/icon-call.svg);
+    background-image: url(../images/footer/icon-call.svg);
     background-repeat: no-repeat;
-    background-position: center;
+	 background-position: center;
+	 fill: yellow;
   }
 }
 
