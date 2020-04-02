@@ -1,56 +1,80 @@
 .card-section {
   padding-top: 205px;
   padding-bottom: 53px;
-}
+  &__title {
+    text-align: center;
+    line-height: 1.65;
+    margin: 0 auto 34px;
+  }
+  &__list {
+    @include reset;
+    cursor: pointer;
+  }
+  &__item {
+    width: 290px;
+    height: 267px;
+    text-align: center;
+    background-color: $slave-color;
+    box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+    margin-bottom: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+  &__icon {
+    width: 74px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: $primary-color;
+    &:hover {
+      fill: $slave-color;
+    }
+  }
+  &__suptitle {
+    font-weight: 700;
+    margin: 0 auto 14px;
+    width: 248px;
+    &:hover {
+      color: $slave-color;
+    }
+    &::after {
+      display: block;
+      content: '';
+      background-color: $primary-color;
+      width: 25px;
+      height: 2px;
+      margin: 20px auto 0;
+      &:hover {
+        background-color: $slave-color;
+      }
+    }
+  }
+  &__text {
+    font-size: $primary-font-size;
+    color: $secondary-color;
+    line-height: 1.8;
+    margin: 0 auto;
+    width: 250px;
+    &:hover {
+      color: $slave-color;
+    }
+  }
 
-.card-section__title {
-  text-align: center;
-  line-height: 1.65;
-  margin: 0 auto 34px;
-}
-
-.card-section__list {
-  margin: 0;
-  padding: 0;
-}
-
-.card-section__item {
-  width: 290px;
-  height: 267px;
-  text-align: center;
-  background-color: $slave-color;
-  box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
-  margin-bottom: 16px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.card-section__icon {
-	width: 74px;
-	height: 60px;
-	background-repeat: no-repeat;
-	background-position: center;
-	fill: $primary-color;
-}
-
-.card-section__suptitle {
-	font-weight: 700;
-	margin: 0 auto 14px;
-	width: 248px;
-	&::after {
-		display: block;
-		content: "";
-		background-color: $primary-color;
-		width: 25px;
-		height: 2px;
-		margin: 20px auto 0;
-	}
-}
-
-.card-section__text {
-	font-size: $primary-font-size;
-	color: $secondary-color;
-	line-height: 1.8;
-	margin: 0 auto;
-	width: 250px;
+  @include tablets {
+    padding-top: 229px;
+    padding-bottom: 50px;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    &__item {
+      flex: 0 0 290px;
+    }
+  }
 }

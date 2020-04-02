@@ -4,26 +4,45 @@
   align-items: center;
   padding-top: 34px;
   margin-bottom: 60px;
+  &__item {
+	  display: none;
+  }
+  &__button {
+	  display: none;
+  }
+  &__rows {
+	display: block;
+	border: none;
+	background: none;
+	border-style: none;
+	max-width: 100%;
+	height: auto;
+  }
+  @include tablets {
+	  padding-top: 37px;
+	  margin-bottom: 76px;
+	  &__list {
+		  display: flex;
+	  }
+	  &__item {
+		  display: none;
+	  }
+	  &__button {
+		  display: inline-block;
+	  }
+	  &__rows {
+		  margin-left: 45px;
+	  }
+  }
 }
 
-.site-logo {
-}
 
-.logo__img {
+.site-logo__img {
   width: 80px;
   height: 30px;
+  @include tablets {
+	  width: 125px;
+	  height: 42px;
+  }
 }
 
-.navigation__list {
-  display: none;
-}
-
-
-.menu-rows {
-  display: block;
-  border: none;
-  background: none;
-  border-style: none;
-  max-width: 100%;
-  height: auto;
-}

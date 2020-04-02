@@ -2,12 +2,19 @@
   width: 280px;
   margin: 0 auto;
   text-align: left;
+  @include tablets {
+    width: 688px;
+  }
 }
 
 .suptitle__inner {
   color: $primary-color;
 }
 .title {
-	font-size: $title-font-size;
-	font-weight: 800;
+  font-size: $title-font-size;
+  font-weight: 800;
+  @include tablets {
+    font-size: 26px;
+    line-height: 33px;
+  }
 }

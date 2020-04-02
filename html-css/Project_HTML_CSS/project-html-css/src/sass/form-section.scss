@@ -1,56 +1,74 @@
 .form-section {
   padding-top: 58px;
   padding-bottom: 59px;
-  background-image: url(../images/Form/footer-320.jpg);
+  background-image: url(../images/Form/formbg-320.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.form-section__request {
-  min-width: 320px;
-  height: auto;
-  text-align: center;
-}
-
-.form-section__title {
-  line-height: 26px;
-  font-size: 14px;
-  font-weight: 800;
-  color: $slave-color;
-  width: 230px;
-  margin: 0 auto 14px;
-}
-
-.form-section__subtitle {
-  font-size: $primary-font-size;
-  line-height: 20px;
-  font-weight: 600;
-  color: $slave-color;
-  width: 279px;
-  margin: 0 auto 27px;
-}
-
-.form__registration {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 280px;
-  height: 120px;
-  margin: 0 auto 55px;
-}
-
-.form__registration input {
-  display: block;
-  padding-left: 23px;
-  height: 50px;
-  border: 1px solid $slave-color;
-  color: $slave-color;
-  font-size: $main-font-size;
-  line-height: 38px;
-  font-weight: 600;
-  background-color: transparent;
-  &::placeholder {
+  &__request {
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+  }
+  &__title {
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 800;
     color: $slave-color;
+    width: 230px;
+    margin: 0 auto 14px;
+  }
+  &__subtitle {
+    font-size: $primary-font-size;
+    line-height: 20px;
+    font-weight: 600;
+    color: $slave-color;
+    width: 279px;
+    margin: 0 auto 27px;
+  }
+  &__registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    height: 120px;
+    margin: 0 auto 55px;
+  }
+  &__registration input {
+    display: block;
+    padding-left: 23px;
+    height: 50px;
+    border: 1px solid $slave-color;
+    color: $slave-color;
+    font-size: $main-font-size;
+    line-height: 38px;
+    font-weight: 600;
+    background-color: transparent;
+    &::placeholder {
+      color: $slave-color;
+    }
+  }
+  @include tablets {
+    padding-top: 66px;
+    padding-bottom: 64px;
+    background-image: url(../images/Form/formbg-768.jpg);
+    &__request {
+      min-width: 768px;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 38px;
+      width: 575px;
+      margin-bottom: 20px;
+    }
+    &__subtitle {
+      font-size: $slave-font-size;
+      width: 459px;
+      margin-bottom: 41px;
+	 }
+	 &__registration {
+		 width: 400px;
+		 margin-bottom: 31px;
+	 }
   }
 }

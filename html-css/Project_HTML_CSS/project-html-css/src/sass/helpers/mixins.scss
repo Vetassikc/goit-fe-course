@@ -1,11 +1,53 @@
-@mixin transition_transform ($property: transform, $duration: 0.2s, $function: linear) {
-	transition-property: $property;
-	transition-duration: $duration;
-	transition-timing-function: $function;
+@mixin transition_transform(
+  $property: transform,
+  $duration: 0.2s,
+  $function: linear
+) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $function;
 }
 
-@mixin transition_opacity ($property: opacity, $duration: 0.2s, $function: linear) {
-	transition-property: $property;
-	transition-duration: $duration;
-	transition-timing-function: $function;
+@mixin transition_opacity(
+  $property: opacity,
+  $duration: 0.2s,
+  $function: linear
+) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $function;
 }
+
+@mixin desktop {
+  @media screen and (min-width: 1680px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+@mixin tablets {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin center-flex($type: 'all') {
+  display: flex;
+
+  @if $type== 'all' {
+    justify-content: center;
+    align-items: center;
+  } @else if $type== 'hor' {
+    justify-content: center;
+  } @else if $type== 'ver' {
+    align-items: center;
+  }
+}
+
+@mixin reset {
+	margin: 0;
+	padding: 0;
+ }

@@ -1,15 +1,21 @@
 .advantage-section {
-	position: absolute;
-	top: 79%;
-	left: 50%;
-	transform: translateX(-50%);
-	padding-top: 25px;
+  position: absolute;
+  top: 79%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 25px;
+  &__title {
+    margin: 0 0 15px 0;
+    width: 140px;
+    color: $slave-color;
+    margin-right: 136px;
+  }
+  @include tablets {
+	padding-top: 115px;
+	&__title {
+		text-align: center;
+		width: 478px;
+		margin: 0 auto;
+	}
+  }
 }
-
-.advantage__title {
-	margin: 0 0 15px 0;
-	width: 140px;
-	color: $slave-color;
-	margin-right: 136px;
-}
-

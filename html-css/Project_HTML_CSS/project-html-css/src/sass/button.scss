@@ -1,22 +1,45 @@
 .button {
-	display: block;
-	width: 250px;
-	height: 48px;
-	border: 0;
-	background: $primary-color;
-	font-style: normal;
-	font-weight: 700;
-	font-size: $primary-font-size;
-	line-height: 13px;
-	color: $slave-color;
-	text-transform: uppercase;
-	padding: 0;
-	margin: 0 auto 36px;
-	@include transition_transform;
-	&:hover {
-		background: transparent;
-		color: $main-color;
-		border: 2px solid $primary-color;
-		@include transition_transform;
-	}
+  display: block;
+  width: 250px;
+  height: 48px;
+  border: 0;
+  background: $primary-color;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $primary-font-size;
+  line-height: 13px;
+  color: $slave-color;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 auto;
+  @include transition_transform;
+  &:hover {
+    background: transparent;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    @include transition_transform;
+  }
+}
+
+.site-navigation__button {
+  display: block;
+  width: 250px;
+  height: 48px;
+  border: 2px solid $primary-color;
+  background: transparent;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $primary-font-size;
+  line-height: 13px;
+  color: $primary-color;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 auto;
+  @include transition_transform;
+  &:hover {
+    background: $primary-color;
+    color: $slave-color;
+    border: 0;
+    @include transition_transform;
+  }
 }

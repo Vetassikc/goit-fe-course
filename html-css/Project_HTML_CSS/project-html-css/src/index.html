@@ -14,26 +14,28 @@
       <div class="container">
         <nav class="site-navigation">
           <a class="site-logo" href="#">
-            <img class="logo__img" src="./images/logo.png" alt="hellen" />
+            <img class="site-logo__img" src="./images/logo.png" alt="hellen" />
           </a>
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Программа обучения</a>
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Программа обучения</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">О нас</a>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">О нас</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Варианты обучения</a>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Варианты обучения</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Контакты</a>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Контакты</a>
             </li>
-            <button class="header__button">Консультация по телефону</button>
+            <button class="site-navigation__button ">
+              Консультация по телефону
+            </button>
+            <button class="site-navigation__rows">
+              <img src="./images/header-menu.png" alt="" />
+            </button>
           </ul>
-          <button class="menu-rows">
-            <img src="./images/header-menu.png" alt="" />
-          </button>
         </nav>
       </div>
     </header>
@@ -41,48 +43,50 @@
       <!-- SECTION HEADER -->
       <section class="header-section">
         <div class="container">
-          <h2 class="header-section__title title">
-            Комплексная подготовка к ВНО по английскому языку
-          </h2>
-          <p class="header-section__slogan">Просто не будет.</p>
-          <p class="header-section__suptitle">
-            Но ты гарантировано наберешь
-            <span class="suptitle__inner">+25 баллов</span>
-          </p>
-          <button class="button">хочу на бесплатное занятие</button>
-          <img
-            class="header__photo"
-            src="./images/header-photo.png"
-            alt="header photo"
-          />
+          <div class="header-section__content">
+            <div class="header-section__block">
+              <h2 class="header-section__title title">
+                Комплексная подготовка к ВНО по английскому языку
+              </h2>
+              <p class="header-section__slogan">Просто не будет.</p>
+              <p class="header-section__suptitle">
+                Но ты гарантировано наберешь
+                <span class="suptitle__inner">+25 баллов</span>
+              </p>
+              <button class="header-section__button button">
+                хочу на бесплатное занятие
+              </button>
+            </div>
+            <img
+              class="header-section__photo"
+              src="./images/header-photo.png"
+              alt="header photo"
+            />
+          </div>
           <ul class="header-section__features">
             <li class="header-section__item">
-              <svg class="header-section__icon" width="30px" height="36px">
-                <use
-                  href="./images/icons/icons/sprite.svg#icon-female_student"
-                ></use>
-              </svg>
-              <span class="header-section__text">
+              <div
+                class="header-section__icon header-section__icon--icon1"
+              ></div>
+              <h3 class="header-section__text">
                 Адаптированная авторская программа ВНО
-              </span>
+              </h3>
             </li>
             <li class="header-section__item">
-              <svg class="header-section__icon" width="30px" height="36px">
-                <use href="./images/icons/icons/sprite.svg#icon-mobile"></use>
-              </svg>
-              <span class="header-section__text">
+              <div
+                class="header-section__icon header-section__icon--icon2"
+              ></div>
+              <h3 class="header-section__text">
                 Современные методики обучения
-              </span>
+              </h3>
             </li>
             <li class="header-section__item">
-              <svg class="header-section__icon" width="30px" height="36px">
-                <use
-                  href="./images/icons/icons/sprite.svg#icon-insurance"
-                ></use>
-              </svg>
-              <span class="header-section__text">
+              <div
+                class="header-section__icon header-section__icon--icon3"
+              ></div>
+              <h3 class="header-section__text">
                 Финансовая гарантия результата
-              </span>
+              </h3>
             </li>
           </ul>
         </div>
@@ -220,77 +224,89 @@
           <ul class="program-section__list">
             <li class="program-section__item">
               <h3 class="program-section__subtitle">1 семестр</h3>
-              <ul class="item__list">
-                <li class="item__list--item">
-                  <p class="caption">Grammar</p>
-                  <p class="theme">Nouns & Articles Adjectives & Adverb</p>
+              <ul class="program-section__block">
+                <li class="program-section__block--item">
+                  <p class="program-section__caption">Grammar</p>
+                  <p class="program-section__theme">
+                    Nouns & Articles Adjectives & Adverb
+                  </p>
                 </li>
-                <li class="item__list--item">
-                  <p class="caption">Vocabulary</p>
-                  <p class="theme">Family & Relations People & Society</p>
+                <li class="program-section__block--item">
+                  <p class="program-section__caption">Vocabulary</p>
+                  <p class="program-section__theme">
+                    Family & Relations People & Society
+                  </p>
                 </li>
               </ul>
             </li>
             <li class="program-section__item">
               <h3 class="program-section__subtitle">2 семестр</h3>
-              <ul class="item__list">
-                <li class="item__list--item">
-                  <p class="caption">Grammar</p>
-                  <p class="theme">Pronouns Active Voice Passive Voice</p>
+              <ul class="program-section__block">
+                <li class="program-section__block--item">
+                  <p class="program-section__caption">Grammar</p>
+                  <p class="program-section__theme">
+                    Pronouns Active Voice Passive Voice
+                  </p>
                 </li>
-                <li class="item__list--item">
-                  <p class="caption">Vocabulary</p>
-                  <p class="theme">Home School Work</p>
+                <li class="program-section__block--item">
+                  <p class="program-section__caption">Vocabulary</p>
+                  <p class="program-section__theme">Home School Work</p>
                 </li>
               </ul>
             </li>
             <li class="program-section__item">
               <h3 class="program-section__subtitle">3 семестр</h3>
-              <ul class="item__list">
-                <li class="item__list--item">
-                  <p class="caption">Grammar</p>
-                  <p class="theme">
+              <ul class="program-section__block">
+                <li class="program-section__block--item">
+                  <p class="program-section__caption">Grammar</p>
+                  <p class="program-section__theme">
                     Modal verbs Infinitive Gerund Participle: 1, 2
                   </p>
                 </li>
-                <li class="item__list--item">
-                  <p class="caption">Vocabulary</p>
-                  <p class="theme">
+                <li class="program-section__block--item">
+                  <p class="program-section__caption">Vocabulary</p>
+                  <p class="program-section__theme">
                     Travel & Tourism Culture & Free Time Sport
                   </p>
                 </li>
-                <li class="item__list--item">
-                  <p class="caption">Writing</p>
-                  <p class="theme">Informal Letter</p>
+                <li class="program-section__block--item">
+                  <p class="program-section__caption">Writing</p>
+                  <p class="program-section__theme">Informal Letter</p>
                 </li>
               </ul>
             </li>
             <li class="program-section__item">
               <h3 class="program-section__subtitle">4 семестр</h3>
-              <ul class="item__list">
-                <li class="item__list--item">
-                  <p class="caption">Grammar</p>
-                  <p class="theme">
+              <ul class="program-section__block">
+                <li class="program-section__block--item">
+                  <p class="program-section__caption">Grammar</p>
+                  <p class="program-section__theme">
                     Clauses: Conditional and Wishes Direct / Reported speech
                     Preposition Conjunction Numeral
                   </p>
                 </li>
-                <li class="item__list--item">
-                  <p class="caption">Vocabulary</p>
-                  <p class="theme">Healthy Living Nature & Environment Money</p>
+                <li class="program-section__block--item">
+                  <p class="program-section__caption">Vocabulary</p>
+                  <p class="program-section__theme">
+                    Healthy Living Nature & Environment Money
+                  </p>
                 </li>
-                <li class="item__list--item">
-                  <p class="caption">Writing</p>
-                  <p class="theme">Formal Letter</p>
+                <li class="program-section__block--item">
+                  <p class="program-section__caption">Writing</p>
+                  <p class="program-section__theme">Formal Letter</p>
                 </li>
               </ul>
             </li>
             <li class="program-section__item">
               <h3 class="program-section__subtitle">5 семестр</h3>
-              <ul class="item__list">
+              <ul class="program-section__block">
                 <li class="item__list--item">
-                  <p class="caption visibility">Test</p>
-                  <p class="theme">Revision<br />Tests</p>
+                  <p
+                    class="program-section__caption program-section__caption--visibility"
+                  >
+                    Test
+                  </p>
+                  <p class="program-section__theme">Revision<br />Tests</p>
                 </li>
               </ul>
             </li>
@@ -298,7 +314,7 @@
 
           <!-- ADVANTAGE SECTION -->
           <div class="advantage-section">
-            <h2 class="advantage__title title">Почему нас выбирают</h2>
+            <h2 class="advantage-section__title title">Почему нас выбирают</h2>
             <ul class="numbered-list">
               <li class="numbered-list__item">
                 <p class="numbered-list__counter">01</p>
@@ -340,75 +356,79 @@
       <!-- TEACHER SECTION -->
       <section class="teacher-section container">
         <h2 class="teacher-section__title title">Преподаватель</h2>
-        <picture class="teacher-section__photo">
-          <source
-            media="(min-width: 1280px)"
-            srcset="./images/photos/teacher-1280.jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/photos/teacher-768.jpg"
-          />
-          <img
-            src="./images/photos/teacher-320.jpg"
-            alt="photo with a teacher"
-          />
-        </picture>
-        <h3 class="teacher-section__name">Елена Морева</h3>
-        <ul class="teacher-section__list">
-          <li class="teacher-section__item">
-            Опыт подготовки учеников к ВНО - 6 лет
-          </li>
-          <li class="teacher-section__item">
-            Собственный результат сдачи ВНО - 197 баллов 2 года подряд
-          </li>
-          <li class="teacher-section__item">
-            Сдала на отлично международный аналог ВНО - Кембриджский PET
-            (Preliminary English Test)
-          </li>
-        </ul>
-        <p class="teacher-section__text">
-          Высшее образование получила в Институте международных отношений НАУ по
-          специальности переводчик - аналитик.
-        </p>
-        <p class="teacher-section__text">
-          В свободное время проходит курсы от лучших университетов мира по
-          эффективному преподаванию и методикам написания сочинений.
-        </p>
-        <p class="teacher-section__text">
-          В числе пройденных: English Grammar and Essay Writing (Berkeley),
-          English Grammar&Style (The University of Queesland), How to Write an
-          Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of
-          Teaching (GEMS education), Powerful Tools for Teaching and Learning
-          (University of Houston).
-        </p>
-        <a class="teacher-section__link suptitle__inner" href="#"
-          >Cambrige English Entry Level Certificate</a
-        >
+        <div class="teacher-section__wrapper">
+          <picture class="teacher-section__photo">
+            <source
+              media="(min-width: 1280px)"
+              srcset="./images/photos/teacher-1280.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/photos/teacher-768.jpg"
+            />
+            <img
+              src="./images/photos/teacher-320.jpg"
+              alt="photo with a teacher"
+            />
+          </picture>
+          <div class="teacher-section__block">
+            <h3 class="teacher-section__name">Елена Морева</h3>
+            <ul class="teacher-section__list">
+              <li class="teacher-section__item">
+                Опыт подготовки учеников к ВНО - 6 лет
+              </li>
+              <li class="teacher-section__item">
+                Собственный результат сдачи ВНО - 197 баллов 2 года подряд
+              </li>
+              <li class="teacher-section__item">
+                Сдала на отлично международный аналог ВНО - Кембриджский PET
+                (Preliminary English Test)
+              </li>
+            </ul>
+            <p class="teacher-section__text">
+              Высшее образование получила в Институте международных отношений
+              НАУ по специальности переводчик - аналитик.
+            </p>
+            <p class="teacher-section__text">
+              В свободное время проходит курсы от лучших университетов мира по
+              эффективному преподаванию и методикам написания сочинений.
+            </p>
+            <p class="teacher-section__text">
+              В числе пройденных: English Grammar and Essay Writing (Berkeley),
+              English Grammar&Style (The University of Queesland), How to Write
+              an Essay (Berkeley), Academic and Business Writing (Berkeley), The
+              Art of Teaching (GEMS education), Powerful Tools for Teaching and
+              Learning (University of Houston).
+            </p>
+            <a class="teacher-section__link suptitle__inner" href="#"
+              >Cambrige English Entry Level Certificate</a
+            >
+          </div>
+        </div>
       </section>
 
       <!-- WARRANTY SECTION -->
       <section class="warranty-section container">
         <h2 class="warranty-section__title title">Мы гарантируем</h2>
-        <div class="warranty">
-          <ul class="warranty__list">
-            <li class="warranty__item">
+        <div class="warranty-section__wrapper">
+          <ul class="warranty-section__list">
+            <li class="warranty-section__item">
               Ты сдашь ВНО минимум на 25 баллов лучше, чем на первом пробном
               тестировании. Иначе мы вернем деньги.<span class="suptitle__inner"
                 >&#42;</span
               >
             </li>
-            <li class="warranty__item">
+            <li class="warranty-section__item">
               Ты научишься писать сочинения минимум на 10 баллов из 14.
               <span class="suptitle__inner"
                 >В то время как 20&#37; учеников получили за сочинение 0.</span
               >
             </li>
-            <li class="warranty__item">
+            <li class="warranty-section__item">
               Ты будешь заниматься в своем районе. Мы выберем место проведения
               занятий после формирования команд.
             </li>
-            <li class="warranty__item">
+            <li class="warranty-section__item">
               Команды будут сформированы, исходя из начального уровня учеников.
               Мы учитываем особенности каждого ученика.
             </li>
@@ -418,96 +438,82 @@
 
       <!-- 'REVIEWS SECTION' -->
       <section class="reviews-section container">
-        <h3 class="reviews-section__titile title">Отзывы наших выпускников</h3>
+        <h3 class="reviews-section__title title">Отзывы наших выпускников</h3>
         <div class="reviews-section__content">
-          <picture class="reviews-section__image">
-            <source
-              media="(min-width: 1280px)"
-              srcset="./images/photos/reviews-1280.png"
-            />
-            <img
-              src="./images/photos/reviews-320-768.png"
-              alt="photo with a person"
-            />
-          </picture>
-          <a class="reviews-section__link" href="#">
-            <svg class="reviews-section__icon" width="34px" height="25px">
-              <use href="./images/icons/icons/sprite.svg#icon-vk"></use>
-            </svg>
-          </a>
-          <p class="reviews-section__name suptitle__inner">Тоня Кучеровская</p>
-          <p class="reviews-section__about">
-            Выпуск 2015-го года, Національний університет біоресурсів і
-            природокористування України
-          </p>
+          <div class="reviews-section__photo">
+            <picture class="reviews-section__image">
+              <source
+                media="(min-width: 1280px)"
+                srcset="./images/photos/reviews-1280.png"
+              />
+              <img
+                src="./images/photos/reviews-320-768.png"
+                alt="photo with a person"
+              />
+            </picture>
+            <a class="reviews-section__link" href="#">
+              <svg class="reviews-section__icon" width="34px" height="25px">
+                <use href="./images/icons/icons/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="reviews-section__block">
+            <p class="reviews-section__name suptitle__inner">
+              Тоня Кучеровская
+            </p>
+            <p class="reviews-section__about">
+              Выпуск 2015-го года, Національний університет біоресурсів і
+              природокористування України
+            </p>
 
-          <p class="reviews-section__text">
-            За короткий час занять з Оленою я опанувала граматику і поповнила
-            свій зовсім пустий словниковий запас. З першого ж заняття я
-            зрозуміла, що знаходжуся у своїй тарілці ...
-            <button class="reviews-section__button suptitle__inner">
-              Читать дальше
-            </button>
-          </p>
-          <p class="slides__text-tablet">
-            За короткий час занять з Оленою я опанувала граматику і поповнила
-            свій зовсім пустий словниковий запас. З першого ж заняття я
-            зрозуміла, що знаходжуся у своїй тарілці. Ми з Оленою стали друзями,
-            тому що її справді хвилювала моя успішність. Вона стала для мене
-            авторитетом, проте я не тремтіла на уроках, маючи страх зробити
-            найменшу помилку. Зараз я можу похизуватись тим, що я студен ...
-            <button class="reviews-section__button suptitle__inner">
-              Читать дальше
-            </button>
-          </p>
+            <p class="reviews-section__text">
+              За короткий час занять з Оленою я опанувала граматику і поповнила
+              свій зовсім пустий словниковий запас. З першого ж заняття я
+              зрозуміла, що знаходжуся у своїй тарілці ...
+              <button class="reviews-section__button suptitle__inner">
+                Читать дальше
+              </button>
+            </p>
+            <p class="reviews-section__text--tablet">
+              За короткий час занять з Оленою я опанувала граматику і поповнила
+              свій зовсім пустий словниковий запас. З першого ж заняття я
+              зрозуміла, що знаходжуся у своїй тарілці. Ми з Оленою стали
+              друзями, тому що її справді хвилювала моя успішність. Вона стала
+              для мене авторитетом, проте я не тремтіла на уроках, маючи страх
+              зробити найменшу помилку. Зараз я можу похизуватись тим, що я
+              студен ...
+              <button class="reviews-section__button suptitle__inner">
+                Читать дальше
+              </button>
+            </p>
+          </div>
         </div>
         <div class="slider">
           <div class="slider__buttons">
             <button class="slider__ctrl slider__ctrl-prev"></button>
             <button class="slider__ctrl slider__ctrl-next"></button>
           </div>
-          <div class="slider__pagination">
+          <div class="slider-pagination">
             <button class="slider-pagination__item">
-              <img
-                src="./images/photos/slider-01.png"
-                alt="photo"
-              />
+              <img src="./images/photos/slider-01.png" alt="photo" />
             </button>
             <button class="slider-pagination__item">
-              <img
-                src="./images/photos/slider-02.png"
-                alt="photo"
-              />
+              <img src="./images/photos/slider-02.png" alt="photo" />
             </button>
             <button class="slider-pagination__item">
-              <img
-                src="./images/photos/slider-03.png"
-                alt="photo"
-              />
+              <img src="./images/photos/slider-03.png" alt="photo" />
             </button>
             <button class="slider-pagination__item">
-              <img
-                src="./images/photos/slider-04.png"
-                alt="photo"
-              />
+              <img src="./images/photos/slider-04.png" alt="photo" />
             </button>
             <button class="slider-pagination__item">
-              <img
-                src="./images/photos/slider-05.png"
-                alt="photo"
-              />
+              <img src="./images/photos/slider-05.png" alt="photo" />
             </button>
             <button class="slider-pagination__item">
-              <img
-                src="./images/photos/slider-06.png"
-                alt="photo"
-              />
+              <img src="./images/photos/slider-06.png" alt="photo" />
             </button>
             <button class="slider-pagination__item">
-              <img
-                src="./images/photos/slider-07.png"
-                alt="photo"
-              />
+              <img src="./images/photos/slider-07.png" alt="photo" />
             </button>
           </div>
         </div>
@@ -517,15 +523,18 @@
       <section class="form-section">
         <div class="form-section__request container">
           <h2 class="form-section__title ">
-            Регистрация на <span class="suptitle__inner">бесплатную </span>телефонную
-            <span class="suptitle__inner">консультацию </span>по нюансам ЗНО по английскому языку
+            Регистрация на
+            <span class="suptitle__inner">бесплатную </span>телефонную
+            <span class="suptitle__inner">консультацию </span>по нюансам ЗНО по
+            английскому языку
           </h2>
           <p class="form-section__subtitle">
-            Оставь заявку на участие в <span class="suptitle__inner">бесплатном занятии. </span>С вами
+            Оставь заявку на участие в
+            <span class="suptitle__inner">бесплатном занятии. </span>С вами
             свяжется консультант и ответит на вопросы.
           </p>
           <form class="form" action="#">
-            <div class="form__registration">
+            <div class="form-section__registration">
               <input type="text" name="name" placeholder="Имя &#42;" required />
               <input
                 type="tel"
@@ -568,7 +577,9 @@
         </a>
       </div>
       <div class="legal__information">
+        <div class="footer__text container">
           <span>&#64; Все права защищены, 2019</span>
+        </div>
       </div>
     </footer>
   </body>

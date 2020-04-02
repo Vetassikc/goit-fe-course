@@ -2,53 +2,84 @@
   padding-top: 36px;
   text-align: center;
   padding-bottom: 14px;
-}
-
-.contacts__phone {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 15px;
-  color: $main-color;
-  font-size: 18px;
-  line-height: 38px;
-  font-weight: 600;
-  text-decoration: none;
-
-  &::before {
-    display: block;
-    content: '';
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    left: 0;
-    top: 8px;
-    background-image: url(../images/footer/icon-call.svg);
-    background-repeat: no-repeat;
-	 background-position: center;
-	 fill: yellow;
+  &__phone {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    color: $main-color;
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 600;
+    text-decoration: none;
+    &::before {
+      display: block;
+      content: '';
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      left: 0;
+      top: 8px;
+      background-image: url(../images/footer/icon-call.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      fill: yellow;
+    }
   }
-}
-
-.contacts__link {
-  display: block;
+  &__link {
+    display: block;
+  }
+  @include tablets {
+    display: flex;
+    padding: 37px 0;
+    text-align: left;
+  }
+  &__link {
+    margin: 0;
+  }
+  &__phone {
+    margin-right: 30px;
+    margin-bottom: 0;
+    padding-right: 30px;
+    font-size: 20px;
+    order: 2;
+    &::after {
+      display: block;
+      content: '';
+      width: 1px;
+      height: 29px;
+      position: absolute;
+      top: 5px;
+      right: 0;
+      background-color: #e0e0e0;
+    }
+  }
 }
 
 .instagram__icon {
   margin: 0 auto;
   margin-bottom: 20px;
   width: 37px;
+  @include tablets {
+    margin: 0;
+    order: 3;
+  }
 }
 
 .logo__icon {
   margin: 0 auto;
   width: 79px;
-}
-
-.logo__img {
-  margin: 0 auto;
+  &__img {
+    margin: 0 auto;
+  }
+  @include tablets {
+    margin: 0;
+    margin-right: 83px;
+    width: 126px;
+    order: 1;
+  }
 }
 
 .legal__information {
@@ -59,5 +90,11 @@
   font-size: $primary-font-size;
   line-height: 38px;
   font-weight: 500;
-  text-align: center;
+}
+
+.footer__text {
+	text-align: center;
+	@include tablets {
+		text-align: left;
+	}
 }
