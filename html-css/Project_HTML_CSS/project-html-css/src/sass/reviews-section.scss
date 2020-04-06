@@ -45,6 +45,18 @@
       right: -18px;
     }
   }
+  @include laptop {
+    width: 1065px;
+    &__ctrl {
+      bottom: 250px;
+    }
+    &__ctrl-prev {
+      left: -55px;
+    }
+    &__ctrl-next {
+      right: -55px;
+    }
+  }
 }
 
 .reviews-section {
@@ -140,6 +152,46 @@
       }
     }
   }
+  @include laptop {
+    padding-bottom: 100px;
+    &__title {
+      font-size: 42px;
+      line-height: 63px;
+      margin-bottom: 35px;
+    }
+    &__content {
+      padding: 45px 86px 34px;
+      width: 1065px;
+      height: 343px;
+      margin: 0 auto;
+    }
+    &__image img {
+      margin-bottom: 25px;
+      width: 145px;
+      height: 145px;
+    }
+    &__block {
+      width: 709px;
+    }
+    &__name {
+      font-size: 25px;
+      line-height: 29px;
+    }
+    &__about {
+      font-size: 13px;
+      line-height: 17px;
+    }
+    &__text {
+      &--tablet {
+        font-size: 17px;
+        line-height: 29px;
+      }
+    }
+    &__button {
+      font-size: 17px;
+      line-height: 29px;
+    }
+  }
 }
 
 .slider-pagination {
@@ -169,5 +221,9 @@
         border-radius: 50%;
       }
     }
+  }
+  @include laptop {
+    padding-top: 36px;
+    width: 593px;
   }
 }

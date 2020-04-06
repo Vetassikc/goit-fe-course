@@ -75,6 +75,42 @@
     }
     &__item {
       flex: 0 0 290px;
+      margin: 0;
+      &:nth-child(-n + 3) {
+        margin-bottom: 16px;
+      }
     }
+  }
+  @include laptop {
+    padding-top: 168px;
+    padding-bottom: 100px;
+  }
+  &__title {
+    font-size: 42px;
+    line-height: 63px;
+    text-align: left;
+    margin-bottom: 44px;
+  }
+  &__list {
+    @include reset;
+  }
+  &__item {
+    flex: none;
+    width: 390px;
+    height: 340px;
+    padding-top: 41px;
+    &:nth-child(-n + 3) {
+      margin-bottom: 19px;
+    }
+  }
+  &__suptitle {
+    font-size: 18px;
+    line-height: 29px;
+    width: 314px;
+  }
+  &__text {
+    font-size: $slave-font-size;
+    line-height: 31px;
+    width: 300px;
   }
 }

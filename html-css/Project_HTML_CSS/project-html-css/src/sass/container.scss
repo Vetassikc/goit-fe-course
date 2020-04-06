@@ -5,6 +5,9 @@
   @include tablets {
     width: 688px;
   }
+  @include laptop {
+	  width: 1210px;
+  }
 }
 
 .suptitle__inner {
@@ -16,5 +19,9 @@
   @include tablets {
     font-size: 26px;
     line-height: 33px;
+  }
+  @include laptop {
+	  font-size: 48px;
+	  line-height: 58px;
   }
 }

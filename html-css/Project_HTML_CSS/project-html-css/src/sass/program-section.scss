@@ -124,4 +124,57 @@
       }
     }
   }
+  @include laptop {
+    padding-top: 78px;
+    background-image: url(../images/photos/photo-02-cut-desktop.jpg);
+    background-position: 0 514px;
+    height: 1219px;
+    overflow: hidden;
+    &__title {
+      font-size: 42px;
+      margin-bottom: 29px;
+    }
+    &__subtitle {
+      font-size: 19px;
+      line-height: 29px;
+    }
+    &__caption {
+      font-size: 18px;
+      line-height: 29px;
+    }
+    &__theme {
+      font-size: 19px;
+      line-height: 29px;
+    }
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 40px;
+      padding-left: 30px;
+      min-width: 1210px;
+      &::before {
+        content: '';
+        width: 100vw;
+        transform: translateX(calc((-100vw + 1210px) / 2));
+        height: 2px;
+      }
+    }
+    &__item {
+      width: 160px;
+      &::before {
+        left: 0;
+        top: -34px;
+      }
+    }
+    &__block {
+      display: block;
+      &--item {
+        width: 160px;
+      }
+    }
+  }
 }

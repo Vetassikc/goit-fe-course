@@ -65,10 +65,35 @@
       font-size: $slave-font-size;
       width: 459px;
       margin-bottom: 41px;
-	 }
-	 &__registration {
-		 width: 400px;
-		 margin-bottom: 31px;
-	 }
+    }
+    &__registration {
+      width: 400px;
+      margin-bottom: 31px;
+    }
+  }
+  @include laptop {
+    padding-top: 83px;
+    padding-bottom: 89px;
+    background-image: url(../images/Form/formbg-1280.jpg);
+    min-width: 1280px;
+    &__title {
+      width: 1011px;
+      font-size: 38px;
+      line-height: 51px;
+    }
+    &__subtitle {
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 60px;
+      width: 500px;
+    }
+    &__registration {
+      width: 620px;
+      margin-bottom: 57px;
+    }
+    &__button {
+      width: 350px;
+      height: 68px;
+    }
   }
 }

@@ -56,6 +56,19 @@
       background-color: #e0e0e0;
     }
   }
+  @include laptop {
+    padding-top: 50px;
+    &__phone {
+      padding-left: 50px;
+      font-size: 27px;
+      line-height: 38px;
+      &::before {
+        width: 42px;
+        height: 42px;
+        top: 4px;
+      }
+    }
+  }
 }
 
 .instagram__icon {
@@ -80,6 +93,9 @@
     width: 126px;
     order: 1;
   }
+  @include laptop {
+    margin-right: 254px;
+  }
 }
 
 .legal__information {
@@ -93,8 +109,12 @@
 }
 
 .footer__text {
-	text-align: center;
-	@include tablets {
-		text-align: left;
-	}
+  text-align: center;
+  @include tablets {
+    text-align: left;
+  }
+  @include laptop {
+    font-size: 15px;
+    line-height: 38px;
+  }
 }

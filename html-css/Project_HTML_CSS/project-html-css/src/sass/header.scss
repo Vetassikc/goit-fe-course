@@ -5,44 +5,69 @@
   padding-top: 34px;
   margin-bottom: 60px;
   &__item {
-	  display: none;
+    display: none;
   }
   &__button {
-	  display: none;
+    display: none;
   }
   &__rows {
-	display: block;
-	border: none;
-	background: none;
-	border-style: none;
-	max-width: 100%;
-	height: auto;
+    display: block;
+    border: none;
+    background: none;
+    border-style: none;
+    max-width: 100%;
+    height: auto;
   }
   @include tablets {
-	  padding-top: 37px;
-	  margin-bottom: 76px;
-	  &__list {
-		  display: flex;
-	  }
-	  &__item {
-		  display: none;
-	  }
-	  &__button {
-		  display: inline-block;
-	  }
-	  &__rows {
-		  margin-left: 45px;
-	  }
+    padding-top: 37px;
+    margin-bottom: 76px;
+    &__list {
+      display: flex;
+    }
+    &__item {
+      display: none;
+    }
+    &__button {
+      display: inline-block;
+    }
+    &__rows {
+      margin-left: 45px;
+    }
+  }
+  @include laptop {
+    margin-bottom: 44px;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 907px;
+    }
+    &__item {
+      display: inline-block;
+    }
+    &__link {
+      font-size: 12px;
+      color: $secondary-color;
+      text-transform: uppercase;
+      font-weight: 700;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    &__rows {
+      display: none;
+    }
+    &__button {
+      margin: 0;
+    }
   }
 }
-
 
 .site-logo__img {
   width: 80px;
   height: 30px;
   @include tablets {
-	  width: 125px;
-	  height: 42px;
+    width: 125px;
+    height: 45px;
   }
 }
-
