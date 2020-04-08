@@ -26,7 +26,7 @@
       top: 10px;
       left: 0;
       width: 2px;
-      height: 1230px;
+      height: 1241px;
       background-color: $secondary-color;
     }
   }
@@ -56,7 +56,7 @@
     font-weight: 700;
     color: $slave-color;
     text-transform: uppercase;
-    margin-bottom: 26px;
+    margin-bottom: 10px;
   }
   &__caption {
     position: relative;
@@ -65,7 +65,7 @@
     line-height: 29px;
     font-weight: 500;
     color: $primary-color;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     &--visibility {
       color: $main-color;
     }
@@ -85,7 +85,7 @@
     line-height: 20px;
     font-weight: 400;
     color: $secondary-color;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
   }
   @include tablets {
     padding-top: 66px;
@@ -129,7 +129,6 @@
     background-image: url(../images/photos/photo-02-cut-desktop.jpg);
     background-position: 0 514px;
     height: 1219px;
-    overflow: hidden;
     &__title {
       font-size: 42px;
       margin-bottom: 29px;
@@ -145,6 +144,7 @@
     &__theme {
       font-size: 19px;
       line-height: 29px;
+      width: 220px;
     }
     &__list {
       display: flex;
@@ -167,7 +167,10 @@
       width: 160px;
       &::before {
         left: 0;
-        top: -34px;
+        top: -37px;
+        width: 17px;
+        height: 17px;
+        border-radius: 9px;
       }
     }
     &__block {
@@ -175,6 +178,36 @@
       &--item {
         width: 160px;
       }
+    }
+  }
+  @include desktop {
+    padding-top: 128px;
+    background-image: url(../images/progbg1680.png);
+    background-position: 0 655px;
+    &__title {
+      margin-bottom: 79px;
+    }
+    &__list {
+      min-width: 1359px;
+      &::before {
+        height: 4px;
+      }
+    }
+    &__item {
+      width: 180px;
+      &::before {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__subtitle {
+      padding-top: 55px;
+      font-size: 21px;
+      line-height: 29px;
+    }
+    &__caption {
+      font-size: 21px;
+      line-height: 29px;
     }
   }
 }

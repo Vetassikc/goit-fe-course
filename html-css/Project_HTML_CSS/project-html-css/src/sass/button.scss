@@ -20,8 +20,13 @@
     @include transition_transform;
   }
   @include laptop {
-	  width: 300px;
-	  height: 68px;
+    width: 300px;
+	 height: 68px;
+	 font-size: 12px;
+  }
+  @include desktop {
+	 width: 350px;
+	 letter-spacing: 3px;
   }
 }
 
@@ -47,7 +52,12 @@
     @include transition_transform;
   }
   @include laptop {
-	width: 300px;
-	height: 68px;
-}
+    width: 300px;
+	 height: 68px;
+	 font-size: 12px;
+  }
+  @include desktop {
+	  width: 350px;
+	  letter-spacing: 3px;
+  }
 }

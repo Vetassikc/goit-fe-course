@@ -35,25 +35,26 @@
     display: flex;
     padding: 37px 0;
     text-align: left;
-  }
-  &__link {
-    margin: 0;
-  }
-  &__phone {
-    margin-right: 30px;
-    margin-bottom: 0;
-    padding-right: 30px;
-    font-size: 20px;
-    order: 2;
-    &::after {
-      display: block;
-      content: '';
-      width: 1px;
-      height: 29px;
-      position: absolute;
-      top: 5px;
-      right: 0;
-      background-color: #e0e0e0;
+
+    &__link {
+      margin: 0;
+    }
+    &__phone {
+      margin-right: 30px;
+      margin-bottom: 0;
+      padding-right: 30px;
+      font-size: 20px;
+      order: 2;
+      &::after {
+        display: block;
+        content: '';
+        width: 1px;
+        height: 29px;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        background-color: #e0e0e0;
+      }
     }
   }
   @include laptop {

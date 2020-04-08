@@ -192,6 +192,9 @@
       line-height: 29px;
     }
   }
+  @include desktop {
+    padding-bottom: 130px;
+  }
 }
 
 .slider-pagination {

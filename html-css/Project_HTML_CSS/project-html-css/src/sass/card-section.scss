@@ -3,7 +3,6 @@
   padding-bottom: 53px;
   &__title {
     text-align: center;
-    line-height: 1.65;
     margin: 0 auto 34px;
   }
   &__list {
@@ -23,23 +22,29 @@
       background-color: $primary-color;
     }
   }
+  &__item:hover &__icon {
+    fill: $slave-color;
+  }
+  &__item:hover &__suptitle {
+    color: $slave-color;
+  }
+  &__item:hover &__suptitle::after {
+    background-color: $slave-color;
+  }
+  &__item:hover &__text {
+    color: $slave-color;
+  }
   &__icon {
     width: 74px;
     height: 60px;
     background-repeat: no-repeat;
     background-position: center;
     fill: $primary-color;
-    &:hover {
-      fill: $slave-color;
-    }
   }
   &__suptitle {
     font-weight: 700;
     margin: 0 auto 14px;
     width: 248px;
-    &:hover {
-      color: $slave-color;
-    }
     &::after {
       display: block;
       content: '';
@@ -47,9 +52,6 @@
       width: 25px;
       height: 2px;
       margin: 20px auto 0;
-      &:hover {
-        background-color: $slave-color;
-      }
     }
   }
   &__text {
@@ -58,9 +60,6 @@
     line-height: 1.8;
     margin: 0 auto;
     width: 250px;
-    &:hover {
-      color: $slave-color;
-    }
   }
 
   @include tablets {
@@ -84,33 +83,54 @@
   @include laptop {
     padding-top: 168px;
     padding-bottom: 100px;
-  }
-  &__title {
-    font-size: 42px;
-    line-height: 63px;
-    text-align: left;
-    margin-bottom: 44px;
-  }
-  &__list {
-    @include reset;
-  }
-  &__item {
-    flex: none;
-    width: 390px;
-    height: 340px;
-    padding-top: 41px;
-    &:nth-child(-n + 3) {
-      margin-bottom: 19px;
+    &__title {
+      text-align: left;
+      margin-bottom: 44px;
+    }
+    &__list {
+      @include reset;
+    }
+    &__item {
+      flex: none;
+      width: 390px;
+      height: 340px;
+      padding-top: 41px;
+      &:nth-child(-n + 3) {
+        margin-bottom: 19px;
+      }
+    }
+    &__suptitle {
+      font-size: 18px;
+      line-height: 29px;
+      width: 314px;
+    }
+    &__text {
+      font-size: $slave-font-size;
+      line-height: 31px;
+      width: 300px;
     }
   }
-  &__suptitle {
-    font-size: 18px;
-    line-height: 29px;
-    width: 314px;
-  }
-  &__text {
-    font-size: $slave-font-size;
-    line-height: 31px;
-    width: 300px;
+
+  @include desktop {
+    padding-top: 304px;
+    padding-bottom: 129px;
+    &__title {
+      margin-bottom: 54px;
+    }
+    &__item {
+      width: 430px;
+      height: 396px;
+      &:nth-child(-n + 3) {
+        margin-bottom: 22px;
+      }
+    }
+    &__suptitle {
+      font-size: 20px;
+      width: 320px;
+    }
+    &__text {
+      font-size: 19px;
+      width: 310px;
+    }
   }
 }

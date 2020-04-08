@@ -69,6 +69,10 @@
     &__registration {
       width: 400px;
       margin-bottom: 31px;
+      height: 180px;
+    }
+    &__registration input {
+      height: 72px;
     }
   }
   @include laptop {
@@ -80,12 +84,13 @@
       width: 1011px;
       font-size: 38px;
       line-height: 51px;
+      margin-bottom: 48px;
     }
     &__subtitle {
       font-size: 18px;
       line-height: 25px;
       margin-bottom: 60px;
-      width: 500px;
+      width: 800px;
     }
     &__registration {
       width: 620px;
@@ -94,6 +99,13 @@
     &__button {
       width: 350px;
       height: 68px;
+    }
+  }
+  @include desktop {
+    padding-top: 130px;
+    min-width: 1339px;
+    &__title {
+      margin-bottom: 38px;
     }
   }
 }

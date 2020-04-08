@@ -61,6 +61,15 @@
       margin: 0;
     }
   }
+  @include desktop {
+    margin-bottom: 49px;
+    &__list {
+      width: 1070px;
+    }
+    &__link {
+      font-size: 14px;
+    }
+  }
 }
 
 .site-logo__img {
@@ -69,5 +78,8 @@
   @include tablets {
     width: 125px;
     height: 45px;
+  }
+  @include desktop {
+    width: 135px;
   }
 }

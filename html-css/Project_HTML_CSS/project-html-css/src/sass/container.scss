@@ -6,7 +6,10 @@
     width: 688px;
   }
   @include laptop {
-	  width: 1210px;
+    width: 1210px;
+  }
+  @include desktop {
+    width: 1340px;
   }
 }
 
@@ -21,7 +24,11 @@
     line-height: 33px;
   }
   @include laptop {
-	  font-size: 48px;
-	  line-height: 58px;
+    font-size: 42px;
+    line-height: 57px;
+  }
+  @include desktop {
+    font-size: 46px;
+    line-height: 63px;
   }
 }

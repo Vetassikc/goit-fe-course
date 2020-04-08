@@ -11,7 +11,7 @@
     margin-right: 136px;
   }
   @include tablets {
-    padding-top: 115px;
+    padding-top: 90px;
     &__title {
       text-align: center;
       width: 478px;
@@ -25,6 +25,13 @@
       font-size: 42px;
       line-height: 57px;
       width: 830px;
+    }
+  }
+  @include desktop {
+    padding-top: 280px;
+    &__title {
+      font-size: 46px;
+      line-height: 63px;
     }
   }
 }
